@@ -1,0 +1,13 @@
+h1{
+    color:red; 
+}
+
+.liga{
+    font-weight:bold;
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a[href="https://www.youtube.com/watch?v=h7MYJghRWt0"]{
+    color:gray
+}
