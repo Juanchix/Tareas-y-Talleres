@@ -9,20 +9,53 @@ p{
     font-size: 24px;
 }
 
-#quees{
+#quees, #mapas, #roles{
     text-align: center;
 }
-
-.liga{
-    font-weight:bold;
-    color: blue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
     
-.Banner{
+.Banner, .lista, .botones_roles{
     text-align: center;
 }
 
 .pagina{
     background-color: #D9D9D9;
+}
+
+.formulario{
+    font-family:'Trebuchet MS'; 
+    font-size: 20px;
+}
+
+.imagen{
+    height: 250px;
+    justify-content: center;
+}
+
+.tipos{
+    background-color: #505050;
+    height: 111px;
+    text-align: center;
+}
+
+.titulos_tabla{
+    font-family:'Trebuchet MS'; 
+    font-size:16px;
+}
+
+#titulo_tabla{
+    font-size:22px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#descripcion{
+    font-size:20px;
+    text-align: center;
+}
+
+.table{
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
 }

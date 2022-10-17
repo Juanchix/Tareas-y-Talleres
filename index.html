@@ -14,35 +14,38 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <img src="Images/valorant-logo-icon-11608279985p9bg0vbcxu.png" alt="Logo" width="63" height="66" class="d-inline-block align-text-top">
-                VALORANT &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+                <b>VALORANT</b> &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#quees">¿Qué es?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#mapas">Mapas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#roles">Roles y agentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#suscribete">Suscribete</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Links de interés
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://playvalorant.com/es-mx/">Página oficial</a></li>
+                                <li><a class="dropdown-item" href="https://www.vlr.gg">Noticias de la VCT y torneos de Valorant</a></li>
+                                <li><a class="dropdown-item" href="https://tracker.gg/valorant">Mira los resultados de tus partidas</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
         
         <div class="container-fluid">
             <div class="row">
@@ -52,6 +55,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         
         <div class="container-fluid">
             <div class="row">
@@ -59,67 +63,481 @@
                         <h2 id="quees">¿Qué es?</h2>
                         <p>Valorant es un FPS (Firts Person Shooter) táctico. Se juega en equipos de 5 vs. 5 basado en personajes. El primer equipo que gane 13 rondas, será el ganador.
                             Para eso, debes eliminar al equipo enemigo, plantar la Spike y no permitir que la desactiven (en ataque) y no pemitir que los enemigos entren a tu Site, 
-                            y si llegan a entrar, debes desactivar la Spike (en defensa). Para esto cada personaje tiene variedad de habilidades con el fin de facilitar el ataque y defensa.
-                            El trabajo en equipo en este juego es fundamental para el desarrollo de estrategias.&nbsp;Desarrollado por <a href="https://www.riotgames.com/es">Riot Games</a> 
+                            y si llegan a entrar, debes desactivar la Spike (en defensa). Para esto, al inicio de cada ronda se comprar armas (pistolas, subfusiles, fusiles, escopetas y ametralladoras) 
+                            y cada personaje tiene variedad de habilidades con el fin de facilitar el ataque y defensa.<br>
+                            El trabajo en equipo en este juego es fundamental para el desarrollo de estrategias.<br>Desarrollado por <a href="https://www.riotgames.com/es">Riot Games</a> 
                             y abierto al público el 2 de junio del 2020. Desde entonces recibe constantes acualizaciones tanto de sus mapas como de sus agentes. También, es destacable 
                             mencionar que cuenta con una liga competitiva profesional, la <a href="https://valorantesports.com">VCT</a> (Valorant Champions Tour), que organiza competiciones 
                             anuales entre todos lo equipos de eSports del mundo. 
                         </p>
+                    </br>
+                    </br>
+                        <h2 id="suscribete">Suscribete</h2>
+                        <p>Si quieres recibir información más detallada del juego, excena competitiva, consejos del juego, etc., dejamos tu correo para 
+                            contactarte, conocerte y platicar un rato de Valorant. Solo diligencia el siguiente formulario y te escribiremos.
+                        </p>
+                        <form>
+                            <div class="formulario">
+                                <label for="nombre">Nombre</label>
+                                <br/>
+                                <input type="text" class="form-control" id="nombre" placeholder="Juan Ortega">
+                                <label for="correo">Correo</label>
+                                <br/>
+                                <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+                                <label for="exampleDataList" class="form-label">Tema de interes</label>
+                                <input class="form-control" list="datalistOptions" id="intereses" placeholder="Estoy interesado en ...">
+                                <datalist id="datalistOptions">
+                                <option value="Como jugar">
+                                <option value="Escena competitiva">
+                                <option value="Algun equipo de eSoprts en especifico">
+                                <option value="Pro Tips/Line ups">
+                                <option value="Otro"></option>
+                                </datalist>
+                            </div>
+                            <div>
+                            </br>
+                                <button type="button" class="btn btn-primary btn-sm">Enviar datos</button>
+                                <button type="reset" class="btn btn-secondary btn-sm">Borrar</button>
+                            </div>
+                        </form>   
                 </div>
+
                 <div class="col">
                     <h2 id="mapas">Mapas</h2>
-        <p>El juego tiene 8 mapas para jugar:</p>
-        <ol>
-            <li>Haven</li>
-            <li>Bind</li>
-            <li>Split (no disponible en Competitivo)</li>
-            <li>Ascent</li>
-            <li>Icebox</li>
-            <li>Breeze</li>
-            <li>Fracture</li>
-            <li>Pearl</li>
-        </ol>
-        <h2 id="roles">Roles</h2>
-        <p>Todos los agentes del juego se pueden clasificar en alguno de los siguientes roles:</p>
-        <dl>
-            <dt>Iniciador
-                <dd>Agentes que suelen comenzar la toma del site o dar informacion al 
-                    equipo aliado sobre e equipo enemigo.</dd>
-            </dt>
-            <dt>Duelista: 
-                <dd>Agentes perfectos para la toma del site. Sus habilidades son muy útiles
-                    para ganar espacio y duelos contra los enemigos.</dd>
-            </dt>
-            <dt>Controlador: 
-                <dd>Agentes que con cuyas habilidades tienen el control de un lugar, ya sea 
-                    para atacar o para defender.</dd>
-            </dt>
-            <dt>Centinela: 
-                <dd>Agentes defensivos. Estos se suelen quedar en el site defendiendolo en defensa
-                    y cubiendo la espalda en ataque.</dd>
-            </dt>
-        </dl>
-        <p class="liga">Este videojuego cuenta con una liga competitiva profesional, organizada por la compañia Riot Games,
-            empresa creadora del videojuego. Esta es la cancion de la competicion del 2021 --><a href="https://www.youtube.com/watch?v=h7MYJghRWt0">DIE FOR YOU</a> 
-        </p>
-        <form>
-            <div>
-                <label for="nombre">Nombre</label>
-                <br/>
-                <input type="text" id="nombre">
-                <label for="correo">Correo</label>
-                <br/>
-                <input type="email" id="correo">
+                        <p>Valorant dispone de 8 mapas para jugar. Conforme pasa el tiempo, los mapas antiguos pueden recibir modificaiciones con el fin 
+                            de hacer el ataque o defensa más sencillo y se incluyen nuevos mapas.
+                        </p>
+                        
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Ascent
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Mapa ambientado en Venecia, Italia. Cuenta con la particularidad de tener puertas (que se pueden destruir) en los Sites</div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/112800-ascent-m-orig-1-article_image_d-1.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/900px-VALORANT_Ascent_2022_Top.png" class="imagen">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Breeze
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Mapa ambientado en el Triangulo de las Bermudas. Es de los mapas más "abiertos" del juego, junto con Icebox. Cuenta con tirolezas</div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/Breeze.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/Mini_Breeze.png" class="iamgen" >
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Bind
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Mapa ambientado en una fabrica en Rabat, Marruecos. Su particularidad es tener dos teletransportes</div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/Bind.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/Mini_mapa Bind.png" class="imagen">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        Fracture
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Mapa ambientado en Nuevo México, EUA. La particularidad del mapa es que los defensores inician desde el centro del mapa</div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/Fracture.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/Mini_Fracture.png" class="imagen">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        Haven
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Mapa ambientado en Butan. Este mapa cuenta con 3 Sites, en vez de dos que es lo convencional</div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/Haven.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/Mini_Haven.png" class="imagen">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                        Icebox
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Mapa ambientado en Siberia. Junto con Breeze, es de los mapas más "abietos", asimismo, tambien cuenta con tirolezas </div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/Icebox.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/Mini_Icebox.png" class="imagen">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        Pearl
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Es el mapa más reciente. Es una cuidad submarina ubicada en Lisboa, Portugal.</div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/Pearl.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/Mini_Pearl.png" class="imagen">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                        Split (actualmente, banneado del competitivo)
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Mapa ambientado en Tokyo, Japón. Por motivos de mantenimiento, este mapa se encuentra fuera de la cola competitivas</div>
+                                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" style="text-align: center;">
+                                                <img src="Images/Split.jpg" class="imagen">
+                                            </div>
+                                            <div class="carousel-item" style="text-align: center;">
+                                                <img src="Images/Mini_Split.png" class="imagen">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 id="roles">Roles y agentes</h2>
+                        <p>Cada agente del juego cuenta con 100 puntos de vida, que se pueden aumentar con la compra de escudos al inicio de la ronda. Todos los agentes del juego 
+                            se pueden clasificar en alguno de los siguientes roles:
+                        </p>
+                        <div>
+                            <table class="table table-bordered" background="Images/ControllerClassSymbol.png">
+                                <thead>
+                                    <p id="titulo_tabla">Controladores</p>
+                                    <p id="descripcion">Agentes que con sus habilidades (principalmente humos) tienen el control de una zona en particular, obligando al 
+                                        enemigo a pensar 2 veces el cruzar dicha area.
+                                    </p>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td><b>Nombre</b></td>
+                                        <td><b>Pais de origen</b></td>
+                                        <td><b>Mapas destacables</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Astra_icon.png"></th>
+                                        <td>Astra</td>
+                                        <td>Ghana</td>
+                                        <td>Pearl</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Brimstone_icon.png"></th>
+                                        <td>Brimstone</td>
+                                        <td>Estados Unidos</td>
+                                        <td>Bind y Fracture</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Omen_icon.png"></th>
+                                        <td >Omen</td>
+                                        <td>Desconocido</td>
+                                        <td>Ascent y Haven</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Viper_icon.png"></th>
+                                        <td>Viper</td>
+                                        <td>Estados Unidos</td>
+                                        <td>Bind, Breeze y Icebox</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">¿?</th>
+                                        <td>Harbor (Nuevo)</td>
+                                        <td>India</td>
+                                        <td>(Aun no hay datos registrados)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="table table-bordered" background="Images/DuelistClassSymbol.png">
+                                <caption>Estos duelistas casi no se usan en el competitivo. Dichos mapas son sugerencia del autor *</caption>
+                                <thead>
+                                    <p id="titulo_tabla">Duelistas</p>
+                                    <p id="descripcion">Agentes que con sus habilidades hacen daño a enemigos, tienen ventaja en duelos y ganan espacio en el Site 
+                                        para poder plantar la Spike.
+                                    </p>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td><b>Nombre</b></td>
+                                        <td><b>Pais de origen</b></td>
+                                        <td><b>Mapas destacables</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Jett_icon.png"></th>
+                                        <td>Jett</td>
+                                        <td>Corea del Sur</td>
+                                        <td>Ascent y Breeze</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Neon_icon.png"></th>
+                                        <td>Neon</td>
+                                        <td>Filipinas</td>
+                                        <td>Fracture</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Phoenix_icon.png"></th>
+                                        <td >Phoenix</td>
+                                        <td>Reino Unido</td>
+                                        <td>Haven y Pearl *</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Raze_icon.png"></th>
+                                        <td>Raze</td>
+                                        <td>Brazil</td>
+                                        <td>Bind y Haven</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Reyna_icon.png"></th>
+                                        <td>Reyna</td>
+                                        <td>Mexico</td>
+                                        <td>Viable en todos los mapas *</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Yoru_icon.png"></th>
+                                        <td>Yoru</td>
+                                        <td>Japón</td>
+                                        <td>Bind, Breeze y Pearl *</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="table table-bordered" background="Images/InitiatorClassSymbol.png">
+                                <thead>
+                                    <p id="titulo_tabla">Iniciadores</p>
+                                    <p id="descripcion">Agentes que con sus habilidades revelan la posicion de enemigos e inician la toma de un Site. 
+                                        Por lo general tienen una habilidad que cada 40 segundos pueden volver a usar para dar información.
+                                    </p>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td><b>Nombre</b></td>
+                                        <td><b>Pais de origen</b></td>
+                                        <td><b>Mapas destacables</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Breach_icon.png"></th>
+                                        <td>Breach</td>
+                                        <td>Suecia</td>
+                                        <td>Fracture y Haven</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Fade_icon.png"></th>
+                                        <td>Face</td>
+                                        <td>Turquia</td>
+                                        <td>Ascent, Haven y Pearl</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/KAYO_icon.png"></th>
+                                        <td>KAY/O</td>
+                                        <td>¿?</td>
+                                        <td>Ascent y Breeze</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Skye_icon.png"></th>
+                                        <td>Skye</td>
+                                        <td>Auntralia</td>
+                                        <td>Bind</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Sova_icon.png"></th>
+                                        <td>Sova</td>
+                                        <td>Rusia</td>
+                                        <td>Breeze y Icebox</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div>
+                            <table class="table table-bordered" background="Images/SentinelClassSymbol.png">
+                                <thead>
+                                    <caption>** Se puede usar como duelista</caption>
+                                    <p id="titulo_tabla">Centinelas</p>
+                                    <p id="descripcion">Agentes expertos en defensa, ya que con sus habilidades impiden la toma del Site del equipo enemigo.
+                                        Suelen jugar a la retaguarda en ataque.
+                                    </p>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td><b>Nombre</b></td>
+                                        <td><b>Pais de origen</b></td>
+                                        <td><b>Mapas destacables</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Chamber_icon.png"></th>
+                                        <td>Chamber **</td>
+                                        <td>Francia</td>
+                                        <td>Todos los mapas</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Cypher_icon.png"></th>
+                                        <td>Cypher</td>
+                                        <td>Marruecos</td>
+                                        <td>* Viable en todos los mapas</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Killjoy_icon.png"></th>
+                                        <td>Killjoy</td>
+                                        <td>Alemania</td>
+                                        <td>Ascent y Haven</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="Images/Sage_icon.png"></th>
+                                        <td>Sage **</td>
+                                        <td>China</td>
+                                        <td>Icebox</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>   
             </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-                </div>
-
-
-
-        
+        </div>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
