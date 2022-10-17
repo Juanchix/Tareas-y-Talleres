@@ -26,8 +26,17 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#mapas">Mapas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#roles">Roles y agentes</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Roles y agentes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#roles">Roles y agentes</a></li>
+                                <li><a class="dropdown-item" href="#controlador">  // Controladores</a></li>
+                                <li><a class="dropdown-item" href="#duelista">  // Duelistas</a></li>
+                                <li><a class="dropdown-item" href="#iniciador">  // Iniciadores</a></li>
+                                <li><a class="dropdown-item" href="#centinela">  // Centinelas</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#suscribete">Suscribete</a>
@@ -339,7 +348,7 @@
                         <p>Cada agente del juego cuenta con 100 puntos de vida, que se pueden aumentar con la compra de escudos al inicio de la ronda. Todos los agentes del juego 
                             se pueden clasificar en alguno de los siguientes roles:
                         </p>
-                        <div>
+                        <div id="controlador">
                             <table class="table table-bordered" background="Images/ControllerClassSymbol.png">
                                 <thead>
                                     <p id="titulo_tabla">Controladores</p>
@@ -387,7 +396,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div>
+                        <div id="duelista">
                             <table class="table table-bordered" background="Images/DuelistClassSymbol.png">
                                 <caption>Estos duelistas casi no se usan en el competitivo. Dichos mapas son sugerencia del autor *</caption>
                                 <thead>
@@ -442,7 +451,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div>
+                        <div id="iniciador">
                             <table class="table table-bordered" background="Images/InitiatorClassSymbol.png">
                                 <thead>
                                     <p id="titulo_tabla">Iniciadores</p>
@@ -491,7 +500,7 @@
                             </table>
                         </div>
 
-                        <div>
+                        <div id="centinela">
                             <table class="table table-bordered" background="Images/SentinelClassSymbol.png">
                                 <thead>
                                     <caption>** Se puede usar como duelista</caption>
