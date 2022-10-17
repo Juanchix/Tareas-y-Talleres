@@ -1,5 +1,16 @@
 h1{
     color:red; 
+    text-align: center;
+    font-family:'Trebuchet MS'; 
+    font-size:48px;
+}
+
+p{
+    font-size: 24px;
+}
+
+#quees{
+    text-align: center;
 }
 
 .liga{
@@ -7,7 +18,11 @@ h1{
     color: blue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+    
+.Banner{
+    text-align: center;
+}
 
-a[href="https://www.youtube.com/watch?v=h7MYJghRWt0"]{
-    color:gray
+.pagina{
+    background-color: #D9D9D9;
 }

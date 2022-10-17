@@ -4,15 +4,70 @@
         <meta charset='utf-8'>
         <title>Mi n-esima página</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href='style.css'>
+        
         <!-- CSS only -->
-        <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel='stylesheet' href='style.css'>
     </head>
-    <body>
+    <body class="pagina">
         <h1>VALORANT</h1>
-        <h2 id="quees">¿Qué es?</h2>
-        <p>En un FPS (Firts Person Shooter) táctico 5 vs 5 basado en personajes.</p>
-        <h2 id="mapas">Mapas</h2>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="Images/valorant-logo-icon-11608279985p9bg0vbcxu.png" alt="Logo" width="63" height="66" class="d-inline-block align-text-top">
+                VALORANT &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="column">
+                    <div class="Banner">
+                        <img src="Images/Banner.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                        <h2 id="quees">¿Qué es?</h2>
+                        <p>Valorant es un FPS (Firts Person Shooter) táctico. Se juega en equipos de 5 vs. 5 basado en personajes. El primer equipo que gane 13 rondas, será el ganador.
+                            Para eso, debes eliminar al equipo enemigo, plantar la Spike y no permitir que la desactiven (en ataque) y no pemitir que los enemigos entren a tu Site, 
+                            y si llegan a entrar, debes desactivar la Spike (en defensa). Para esto cada personaje tiene variedad de habilidades con el fin de facilitar el ataque y defensa.
+                            El trabajo en equipo en este juego es fundamental para el desarrollo de estrategias.&nbsp;Desarrollado por <a href="https://www.riotgames.com/es">Riot Games</a> 
+                            y abierto al público el 2 de junio del 2020. Desde entonces recibe constantes acualizaciones tanto de sus mapas como de sus agentes. También, es destacable 
+                            mencionar que cuenta con una liga competitiva profesional, la <a href="https://valorantesports.com">VCT</a> (Valorant Champions Tour), que organiza competiciones 
+                            anuales entre todos lo equipos de eSports del mundo. 
+                        </p>
+                </div>
+                <div class="col">
+                    <h2 id="mapas">Mapas</h2>
         <p>El juego tiene 8 mapas para jugar:</p>
         <ol>
             <li>Haven</li>
@@ -60,7 +115,12 @@
                 <input type="submit" value="Enviar">
             </div>
         </form>
+                </div>
+
+
+
+        
         <!-- JavaScript Bundle with Popper -->
-        <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"--></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>
