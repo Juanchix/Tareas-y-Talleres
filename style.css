@@ -31,12 +31,6 @@ p{
     justify-content: center;
 }
 
-.tipos{
-    background-color: #505050;
-    height: 111px;
-    text-align: center;
-}
-
 .titulos_tabla{
     font-family:'Trebuchet MS'; 
     font-size:16px;
@@ -54,8 +48,29 @@ p{
 }
 
 .table{
+    text-align: center;  
+}
+
+#controlador{
+    background-image: url(Images/ControllerClassSymbol.png);
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
-    
+}
+
+#duelista{
+    background-image: url(Images/DuelistClassSymbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#iniciador{
+    background-image: url(Images/InitiatorClassSymbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#centinela{
+    background-image: url(Images/SentinelClassSymbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
