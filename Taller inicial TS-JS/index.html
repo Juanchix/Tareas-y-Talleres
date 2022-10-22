@@ -41,51 +41,37 @@
                     </table>
                 </div>
                 <div class="col">
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                          <div class="col">
+                              <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                          </div>
+                          <div class="col">
+                              <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                          </div>
+                        </div>
+                    </form>
                     <h2>Cursos Actuales</h2>
                     <table class="table">
                         <thead class="table-dark">
                             <tr>
                                 <th>Curso</th>
                                 <th>Profesor</th>
-                                <th>Creditos</th>
+                                <th>Créditos</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Desarrollo de SW en equipos</td>
-                                <td>José Bocanegra</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Lenguajes y Máquinas</td>
-                                <td>Nicolas Cardozo</td>
-                                <td>3</td>
-
-                            </tr>
-                            <tr>
-                                <td>Química</td>
-                                <td>Elizabeth</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Física I</td>
-                                <td>Julian</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>Lab. Química</td>
-                                <td>Sandra</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>CBU Colombia</td>
-                                <td>Carlos</td>
-                                <td>2</td>
-                            </tr>
+                        <tbody id="courses">
                         </tbody>
                     </table>
+                    <div class="row justify-content-end">
+                        <h5 class="col-4"><strong>Total Créditos:</strong></h5>
+                        <h5 class="col-4" id="total-credits"><strong></strong></h5>
+                    </div>
                 </div>
             </div>
         </div>
+        <script type="module" src="./scripts/course.js" ></script>
+        <script type="module" src="./scripts/dataCourses.js" ></script>
+        <script type="module" src="./scripts/main.js"></script>
     </body>
 </html>    
