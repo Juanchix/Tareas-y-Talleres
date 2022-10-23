@@ -1,5 +1,4 @@
 import { Course } from './course.js';
-
 import { dataCourses } from './dataCourses.js';
 
 let coursesTbody: HTMLElement = document.getElementById('courses')!;
@@ -26,11 +25,13 @@ function renderCoursesInTable(courses: Course[]): void {
     });
 }
 
+
 function getTotalCredits(courses: Course[]): number {
     let totalCredits: number = 0;
     courses.forEach((course) => totalCredits = totalCredits + course.credits);
     return totalCredits;
 }
+
 
 function applyFilterByName() { 
     let text = inputSearchBox.value;
@@ -45,9 +46,6 @@ function searchCourseByName(nameKey: string, courses: Course[]) {
     return nameKey === '' ? dataCourses : courses.filter( c => 
         c.name.match(nameKey));
 }
-
-
-
 
 
 function clearCoursesInTable() {
