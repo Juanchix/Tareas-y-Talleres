@@ -1,23 +1,22 @@
-import { dataSeries } from './dataSeries.js';
-function insertSeries(dataSeries) {
-    var tbody = document.getElementById('dataSeries');
-    console.log('Desplegando dataSeries.');
-    dataSeries.map(function (s) {
-        var tr = document.createElement('tr');
-        var html = "<td> <b>".concat(s.id, "</b> </td>\n                              <td> <a href=").concat(s.link, " target=\"_blank\">").concat(s.name, "</a> </td>\n                              <td> ").concat(s.channel, " </td>\n                              <td> ").concat(s.seasons, " </td>");
-        tr.innerHTML = html;
-        tbody.appendChild(tr);
+import { series } from './dataSeries.js';
+var seriesTbody = document.getElementById('series');
+var btnfilterByName = document.getElementById("button-filterByName");
+var inputSearchBox = document.getElementById("search-box");
+var totalCreditElm = document.getElementById("total-credits");
+renderCoursesInTable(series);
+function renderCoursesInTable(series) {
+    console.log('Desplegando series');
+    series.forEach(function (serie) {
+        var trElement = document.createElement("tr");
+        trElement.innerHTML = "<td>".concat(serie.id, "</td>\n                           <td>").concat(serie.link, "</td>\n                           <td>").concat(serie.channel, "</td>\n                           <td>").concat(serie.seasons, "</td>");
+        seriesTbody.appendChild(trElement);
     });
 }
-function insertSeasonsAvrg(dataSeries) {
-    console.log('Calculando promedio.');
-    var sum = 0;
-    dataSeries.map(function (s) { sum += s.seasons; });
-    var avrg = sum / dataSeries.length;
-    console.log('Desplegando promedio.');
-    var table = document.getElementById('tabla-dataSeries');
-    var html = '<p> &nbsp; Seasons average: ' + avrg + '</p>';
+function insertSeasonAVG(series) {
+    var suma = 0;
+    series.map(function (serie) { suma += serie.seasons; });
+    var avg = suma / series.length;
+    var table = document.getElementById('tabla-series');
+    var html = '<p> &nbsp; Seasons average: ' + avg + '</p>';
     table.insertAdjacentHTML('afterend', html);
 }
-insertSeries(dataSeries);
-insertSeasonsAvrg(dataSeries);

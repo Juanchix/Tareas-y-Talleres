@@ -1,30 +1,31 @@
 import { Series } from './series.js';
-import { dataSeries } from './dataSeries.js';
+import { series } from './dataSeries.js';
 
-function insertSeries(dataSeries: Series[]): void {
-    let tbody: HTMLElement = document.getElementById('dataSeries')!;
-    console.log('Desplegando dataSeries.');
-    dataSeries.map(s => {
-        let tr: HTMLElement = document.createElement('tr');
-        let html: string = `<td> <b>${s.id}</b> </td>
-                              <td> <a href=${s.link} target="_blank">${s.name}</a> </td>
-                              <td> ${s.channel} </td>
-                              <td> ${s.seasons} </td>`;
-        tr.innerHTML = html;
-        tbody.appendChild(tr);
-    });
+let seriesTbody: HTMLElement = document.getElementById('series')!;
+const btnfilterByName: HTMLElement = document.getElementById("button-filterByName")!;
+const inputSearchBox: HTMLInputElement = <HTMLInputElement> document.getElementById("search-box")!;
+const totalCreditElm: HTMLElement = document.getElementById("total-credits")!;
+
+renderCoursesInTable(series);
+
+function renderCoursesInTable(series: Series[]): void {
+  console.log('Desplegando series');
+  series.forEach((serie) => {
+    let trElement = document.createElement("tr");
+    trElement.innerHTML = `<td>${serie.id}</td>
+                           <td>${serie.link}</td>
+                           <td>${serie.channel}</td>
+                           <td>${serie.seasons}</td>`;
+    seriesTbody.appendChild(trElement);
+  });
 }
 
-function insertSeasonsAvrg(dataSeries: Series[]): void {
-    console.log('Calculando promedio.')
-    let sum: number = 0;
-    dataSeries.map(s => {sum += s.seasons});
-    const avrg: number = sum / dataSeries.length;
-    console.log('Desplegando promedio.')
-    let table: HTMLElement = document.getElementById('tabla-dataSeries')!;
-    const html: string = '<p> &nbsp; Seasons average: '+avrg+'</p>'
+
+function insertSeasonAVG(series:Series[]):void{
+    let suma: number = 0;
+    series.map(serie => {suma += serie.seasons});
+    let avg: number = suma / series.length;
+    let table: HTMLElement = document.getElementById('tabla-series')!;
+    const html: string = '<p> &nbsp; Seasons average: '+avg+'</p>'
     table.insertAdjacentHTML('afterend', html)
 }
-
-insertSeries(dataSeries);
-insertSeasonsAvrg(dataSeries);

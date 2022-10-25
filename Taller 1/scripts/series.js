@@ -1,5 +1,5 @@
-var Serie = /** @class */ (function () {
-    function Serie(id, name, channel, seasons, description, link, cover) {
+var Series = /** @class */ (function () {
+    function Series(id, name, channel, seasons, description, link, cover) {
         this.id = id;
         this.name = name;
         this.channel = channel;
@@ -8,6 +8,6 @@ var Serie = /** @class */ (function () {
         this.link = link;
         this.cover = cover;
     }
-    return Serie;
+    return Series;
 }());
-export { Serie };
+export { Series };
