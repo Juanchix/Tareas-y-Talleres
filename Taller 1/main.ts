@@ -2,30 +2,30 @@ import { Series } from './series.js';
 import { series } from './dataSeries.js';
 
 let seriesTbody: HTMLElement = document.getElementById('series')!;
-const btnfilterByName: HTMLElement = document.getElementById("button-filterByName")!;
-const inputSearchBox: HTMLInputElement = <HTMLInputElement> document.getElementById("search-box")!;
-const totalCreditElm: HTMLElement = document.getElementById("total-credits")!;
+let tabla: HTMLElement = document.getElementById('tablaSeries')!;
 
-renderCoursesInTable(series);
-
-function renderCoursesInTable(series: Series[]): void {
+function renderSeriesInTable(series: Series[]): void {
   console.log('Desplegando series');
   series.forEach((serie) => {
     let trElement = document.createElement("tr");
     trElement.innerHTML = `<td>${serie.id}</td>
-                           <td>${serie.link}</td>
+                           <td><a href='${serie.link}'>${serie.name}</a></td>
                            <td>${serie.channel}</td>
                            <td>${serie.seasons}</td>`;
     seriesTbody.appendChild(trElement);
   });
+  let avg:number = getAvgSeasons(series);
+  const msg: string = '<p>&nbsp;&nbsp;Seasons average: ' +avg+ '</p>'
+  tabla.insertAdjacentHTML('afterend', msg)
 }
 
-
-function insertSeasonAVG(series:Series[]):void{
-    let suma: number = 0;
-    series.map(serie => {suma += serie.seasons});
-    let avg: number = suma / series.length;
-    let table: HTMLElement = document.getElementById('tabla-series')!;
-    const html: string = '<p> &nbsp; Seasons average: '+avg+'</p>'
-    table.insertAdjacentHTML('afterend', html)
+function getAvgSeasons(series: Series[]): number {
+  let total: number = 0;
+  series.forEach((serie) => {
+      total = total + serie.seasons;
+  });
+  let avg : number = total/series.length;
+  return avg;
 }
+
+renderSeriesInTable(series);
