@@ -1,32 +1,36 @@
 <nav class="navbar">
   <div class="container-fluid">
       <a class="navbar-brand">
-          <img src="assets/logo.png" alt="Logo" width="70" height="54" class="d-inline-block align-text-center">
-          <strong>&nbsp;&nbsp;TV Series</strong>
+        <img src="assets/logo.png" alt="Logo" width="70" height="54" class="d-inline-block align-text-center">
+        <strong>&nbsp;&nbsp;TV Series</strong>
       </a>
   </div>
 </nav>
 <br>
 <br>
-<br>
 <div class="container">
   <div class="row">
-      <div class="col-6">
-          <table class="table table-striped table-hover" id='tablaSeries'>
-              <caption></caption>
-              <thead>
-              <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Channel</th>
-                  <th>Seasons</th>
-              </tr>
-              </thead>
-              <tbody id="series">
-              </tbody>
-
-          </table>
-
-      </div>
+    <div class="col-6">
+        <table class="table table-striped table-hover" id='tablaSeries'>
+          <caption></caption>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Channel</th>
+              <th>Seasons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let s of series" id="series">
+              <td> {{s.id}} </td>
+              <td> <a href={{s.webpage}} target='_blank'>{{s.name}}</a> </td>
+              <td> {{s.channel}} </td>
+              <td> {{s.seasons}} </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>&nbsp; Seasons average: {{getAvgSeasons()}}</p>
+    </div>
   </div>
 </div>
